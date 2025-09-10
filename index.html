@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DINAMITA POS</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo" id="brandLogo"></div>
+        <div class="brand-text">
+          <h1>DINAMITA POS</h1>
+          <small>by Dinamita Apps</small>
+        </div>
+      </div>
+      <nav>
+        <a href="#/ventas" id="nav-ventas">💳 Ventas (TPV)</a>
+        <a href="#/productos" id="nav-productos">📦 Productos</a>
+        <a href="#/clientes" id="nav-clientes">👥 Clientes</a>
+        <a href="#/membresias" id="nav-membresias">🎟️ Membresías</a>
+        <a href="#/calendario" id="nav-calendario">📅 Calendario</a>
+        <a href="#/reportes" id="nav-reportes">📈 Reportes</a>
+        <a href="#/historial" id="nav-historial">🧾 Historial</a>
+        <a href="#/config" id="nav-config">⚙️ Configuración</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <div>
+          <b id="negocioNombreHeader">Dinamita Gym</b> · 
+          <span id="sucursalHeader">Sucursal: Principal</span>
+        </div>
+        <div>
+          <button id="btnAbrirCaja" class="btn small">Abrir Caja</button>
+          <button id="btnCerrarCaja" class="btn small secondary">Cerrar Caja</button>
+        </div>
+      </header>
+      <section id="view"></section>
+    </main>
+  </div>
+
+  <!-- Área de ticket para impresión 58mm -->
+  <div id="ticketArea" class="ticket-58mm" aria-hidden="true"></div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
